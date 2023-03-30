@@ -2,9 +2,7 @@ import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.InputStream;
-import java.net.URL;
 
 
 public class StickerGenerator {
@@ -19,7 +17,7 @@ public class StickerGenerator {
         int width = originalImage.getWidth();
         int height = originalImage.getHeight();
         int newHeight = height + 200;
-        BufferedImage newImage = new BufferedImage(width,newHeight, BufferedImage.TRANSLUCENT);
+        BufferedImage newImage = new BufferedImage(width, newHeight, BufferedImage.TRANSLUCENT);
 
         //Copiar imagem original para nova imagem (em memória)
         Graphics2D graphics = (Graphics2D) newImage.getGraphics();
